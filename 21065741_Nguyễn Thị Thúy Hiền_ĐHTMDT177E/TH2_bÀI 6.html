@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html lang="vie">
+
+<head>
+   
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 550px;
+            height: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-image: url(data:image/jpeg;base64,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);
+            border-radius: 5px;
+            background-image: -moz-linear-gradient(0.4);
+        }
+        .wrapper {
+            margin: 0 auto;
+            width: fit-content;
+            background: rgba(248, 146, 243, 0.692);
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 60px 
+        }
+
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+            margin-top: 0;
+            Color: #000000;
+        }
+
+        .wrapper .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 25px 0;
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(222, 15, 15, 0.2);
+            border-radius: 40px;
+            padding: 20px 50px 20px 20px;
+        }
+
+        .input-box input::placeholder {
+            color: #fff;
+        }
+
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+            color:#090707;
+        }
+
+        .remember-forgot label input{
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+
+        .remember-forgot a{
+            color: #090707;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper .btn{
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rbga(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .wrapper .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px 0 15px;
+        }
+
+        .register-link p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .register-link p a:hover {
+            text-decoration: underline;
+        } 
+        .left_column{
+            width: 50%;
+            float: left;
+        }
+        .right_column{
+            width: 50%;
+            float: right;
+        }
+        #bt{
+            width: 60%;
+            margin-top: 20px; 
+            height: 25px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rbga(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form action="">
+                <h1>LOG IN</h1>
+                <p> Login here using your username and password</p>
+                <div class="input-box">
+                  <input type="text" id="fullName" name="fullName" placeholder="👤 UserName" required>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="Password" name="password" placeholder="🔑 Password" required>
+                </div>
+        
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember password </label>
+                    <a href="#">Forgot password? </a>
+                </div>
+                
+                <button type="submit" class="btn">Log In</button>
+            <div class="left_column">
+                <div class="register-link">
+                    <p style="margin-top: 20px;">Don't have an account? </p>
+                </div>
+            </div>
+            
+            <div class="right_column">
+                <button id="bt" type="button">Sign up 
+                    <img style="width: 12px; margin-left: 4px;" src="https://cdn-icons-png.flaticon.com/512/2583/2583118.png" alt="">
+                </button>
+            </div>
+            </form>
+         </div>
+    </div>
+ 
+</body>
+</html>

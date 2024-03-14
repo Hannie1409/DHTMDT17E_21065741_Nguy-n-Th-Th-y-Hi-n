@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 50px;
+            width: 60%;
+            color: #000;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: auto;
+            flex-direction: column;
+        }
+        .contact-section h1 {
+            color: blue;
+            text-align: left;
+            width: 100%;
+        }
+        .contact-section hr {
+            border: 1px solid red;
+            width: 100%;
+        }
+        .contact-section .info-container {
+            width: 45%;
+        }
+        .contact-section .info-container p:first-child {
+            color: rgb(0, 0, 0); 
+            font-size: 20px;
+        }
+        .contact-section .info-container p {
+            color: gray;
+        }
+        .contact-section .form-container {
+            width: 60%;
+        }
+        .contact-section .form-container form input[type="text"],
+        .contact-section .form-container form input[type="email"],
+        .contact-section .form-container form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact-section .form-container form button {
+            background-color: rgb(25, 191, 212);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-section .form-container form button:after {
+            content: "\2713";
+            background-color: #fff;
+            color: blue;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            margin-left: 10px;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h1>LIÊN HỆ</h1>
+        <hr>
+        <div class="contact-content">
+            <div class="info-container">
+                <p>Thông tin </p>
+                <p><i class="fas fa-map-marker-alt"></i> Kp. 6, P. Linh Trung, Tp.Thủ Đức, Tp. HCM</p>
+                <p><i class="fas fa-envelope"></i> info@uit.edu.vn</p>
+                <p><i class="fas fa-phone"></i> +84 28 372 52002</p>
+            </div>
+            <div class="form-container">
+                <h2 style="color: purple;">Hãy liên lạc với chúng tôi bất cứ khi nào !!!</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Họ và tên">
+                    <input type="email" id="email" placeholder="Địa chỉ e-mail">
+                    <input type="text" id="subject" placeholder="Tiêu đề bài viết">
+                    <textarea id="message" placeholder="Nội dung cần gửi"></textarea>
+                    <button type="submit">Gửi tin nhắn</i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            alert('Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + message);
+        });
+    </script>
+</body>
+</html>

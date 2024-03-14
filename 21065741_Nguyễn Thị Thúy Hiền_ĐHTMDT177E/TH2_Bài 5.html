@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: rgb(253, 236, 236);
+        }
+        .login-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0e0d0d;
+            padding: 40px;
+            width: 40%;
+            color: rgb(215, 208, 208);
+        }
+        
+        .login-section .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .login-section .login {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+        .login-section .login .icon {
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            font-size: 50px;
+        }
+        .login-section .input-box {
+            background-color: #f7f7f7;
+            margin: 10px 0;
+            padding: 10px 30px 10px;
+            color: rgb(200, 166, 166);
+            width: 180%;
+        }
+        .login-section .input-box .icon {
+            float: right;
+        }
+        .login-section .lock-box {
+            background-color: red;
+            padding: 20px;
+            color: rgb(176, 173, 173);
+            width: 20px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-section">
+        <div class="login-container">
+            <div class="login">
+                <div class="fas fa-sign-in-alt"></div>  LOGIN
+            </div>
+            <div class="input-box">
+                <div class="icon">👤</div>
+                <input id="username" type="text" placeholder="Tên người dùng">
+            </div>
+            <div class="input-box">
+                <div class="icon">🔑</div>
+                <input id="password" type="password" placeholder="Mật khẩu" onchange="showPassword()">
+            </div>
+        </div>
+        <div class="lock-box">
+            <div class="icon">🔒</div>
+        </div>
+    </div>
+    <script>
+        function showPassword() {
+            var passwordInput = document.getElementById('password');
+            var userChoice = confirm("Bạn muốn hiện mật khẩu?");
+            if (userChoice) {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

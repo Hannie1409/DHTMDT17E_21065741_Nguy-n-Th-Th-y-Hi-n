@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 30;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Giải phương trình bậc 1</h1>
+        <label>Hệ số a: </label><input id="a" type="number"><br>
+        <label>Hệ số b: </label><input id="b" type="number"><br>
+        <button onclick="solve()">Giải phương trình</button>
+        <h2> KẾT QUẢ </h2>
+        <h2 id="result"></h2>
+    </div>
+    <script>
+        function solve() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result;
+            if (a == 0) {
+                result = (b == 0) ? 'Phương trình vô số nghiệm' : 'Phương trình vô nghiệm';
+            } else {
+                result = 'Nghiệm x = ' + (-b/a);
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

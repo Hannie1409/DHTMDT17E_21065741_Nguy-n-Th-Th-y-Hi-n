@@ -1,0 +1,415 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<head> Bài 1
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 30;
+        }
+    </style>
+</head>
+
+<head>
+    Bài 2:
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+        .purple {
+            color: rgb(185, 19, 185);
+        }
+        .gray {
+            color: gray;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .section {
+            background-color: rgb(236, 162, 168);
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width:60%;
+        }
+        .button {
+            background-color: rgb(224, 246, 85);
+            color: rgb(24, 22, 22);
+            padding: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgb(238, 246, 122);
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px 10px;
+            margin: auto;
+        }
+        textarea {
+            width: 100%;
+        } 
+        .padded {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<head>
+    Bài 3
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 50px;
+            width: 60%;
+            color: #000;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: auto;
+            flex-direction: column;
+        }
+        .contact-section h1 {
+            color: blue;
+            text-align: left;
+            width: 100%;
+        }
+        .contact-section hr {
+            border: 1px solid red;
+            width: 100%;
+        }
+        .contact-section .info-container {
+            width: 45%;
+        }
+        .contact-section .info-container p:first-child {
+            color: rgb(0, 0, 0); 
+            font-size: 20px;
+        }
+        .contact-section .info-container p {
+            color: gray;
+        }
+        .contact-section .form-container {
+            width: 60%;
+        }
+        .contact-section .form-container form input[type="text"],
+        .contact-section .form-container form input[type="email"],
+        .contact-section .form-container form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact-section .form-container form button {
+            background-color: rgb(25, 191, 212);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-section .form-container form button:after {
+            content: "\2713";
+            background-color: #fff;
+            color: blue;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            margin-left: 10px;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<head>
+    Bài 4
+    <style>
+        .container {
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-image: -moz-linear-gradient(0.6);
+        }
+        .bmi{
+            padding: 80px;
+            background-color: rgb(255, 242, 190);
+            border-radius: 4px;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            text-align: center;
+            margin-top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input{
+            width: 100%;  
+            padding: 8px 15px;  
+            margin-bottom: 8px;
+            box-sizing: border-box;
+            text-align: left;
+            font-size: 15px;
+            color: rgb(243, 52, 52);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: block;
+        }
+        #loaituoi{
+            width: 100%;  
+            padding: 8px 15px;  
+            margin-bottom: 8px;
+            box-sizing: border-box;
+            text-align: left;
+            font-size: 15px;
+            color: rgb(241, 77, 77);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: block;
+        }
+        button{
+            padding: 6px 15px;
+            background-color: #32c8e9 ;
+            text-align: center;
+            color: aliceblue;   
+            border-radius: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+
+<head> Bài 5
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: rgb(253, 236, 236);
+        }
+        .login-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0e0d0d;
+            padding: 40px;
+            width: 40%;
+            color: rgb(215, 208, 208);
+        }
+        
+        .login-section .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .login-section .login {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+        .login-section .login .icon {
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            font-size: 50px;
+        }
+        .login-section .input-box {
+            background-color: #f7f7f7;
+            margin: 10px 0;
+            padding: 10px 30px 10px;
+            color: rgb(200, 166, 166);
+            width: 180%;
+        }
+        .login-section .input-box .icon {
+            float: right;
+        }
+        .login-section .lock-box {
+            background-color: red;
+            padding: 20px;
+            color: rgb(176, 173, 173);
+            width: 20px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<head>
+ <style>
+    *{
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+        width: 550px;
+        height: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-image: -moz-linear-gradient(0.4);
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: fit-content;
+        background: rgba(248, 146, 243, 0.692);
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 60px 
+    }
+
+    .wrapper h1{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 0;
+        Color: #000000;
+    }
+
+    .wrapper .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 25px 0;
+    }
+
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(222, 15, 15, 0.2);
+        border-radius: 40px;
+        padding: 20px 50px 20px 20px;
+    }
+
+    .input-box input::placeholder {
+        color: #fff;
+    }
+
+    .input-box i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+
+    .wrapper .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+        color:#090707;
+    }
+
+    .remember-forgot label input{
+        accent-color: #fff;
+        margin-right: 3px;
+    }
+
+    .remember-forgot a{
+        color: #090707;
+        text-decoration: none;
+    }
+
+    .remember-forgot a:hover {
+        text-decoration: underline;
+    }
+
+    .wrapper .btn{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rbga(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .wrapper .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin-top: 20px 0 15px;
+    }
+
+    .register-link p a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    } 
+    .left_column{
+        width: 50%;
+        float: left;
+    }
+    .right_column{
+        width: 50%;
+        float: right;
+    }
+    #bt{
+        width: 60%;
+        margin-top: 20px; 
+        height: 25px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rbga(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+    }
+ </style>
+</head>

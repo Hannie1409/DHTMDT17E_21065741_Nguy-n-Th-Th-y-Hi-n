@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+        .purple {
+            color: rgb(185, 19, 185);
+        }
+        .gray {
+            color: gray;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .section {
+            background-color: rgb(236, 162, 168);
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width:60%;
+        }
+        .button {
+            background-color: rgb(224, 246, 85);
+            color: rgb(24, 22, 22);
+            padding: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgb(238, 246, 122);
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px 10px;
+            margin: auto;
+        }
+        textarea {
+            width: 100%;
+        } 
+        .padded {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center purple">
+        <h2>Đóng góp ý kiến về sản phẩm</h2>
+    </div>
+    <div class="center gray padded">
+        <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu</p>
+    </div>
+    <div class="center gray"> 
+        <p>Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm <span class="italic">(nếu có)</span></p>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="column">
+                <label for="name">Họ và tên:</label><br>
+                <input type="text" id="name"><br>
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="text" id="phone"><br>
+                <label for="input-customer-Type">Chọn loại khách hàng:</label><br>
+                <select id="input-customer-Type"required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">Khách hàng VIP</option>
+                    <option value="potential">Khách hàng tiềm</option>
+                    <option value="special">Khách hàng chuyên dụng</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="cardNumber">Mã thẻ:</label><br>
+                <input type="text" id="cardNumber"><br>
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email"><br>
+                <label for="invoiceNumber">Mã hóa đơn:</label><br>
+                <input type="text" id="invoiceNumber">
+            </div>
+        </div>
+        <div class="row">
+            <label for="description">Nhập chi tiết mô tả:</label><br>
+            <textarea id="description"></textarea>
+        </div>
+        <div class="row">
+            <button class="button" onclick="submitFeedback()">Gửi chữ góp ý <i class="fab fa-facebook-messenger"></i></button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function submitFeedback() {
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var customerType = document.getElementById('input-customer-Type').value;
+            var cardNumber = document.getElementById('cardNumber').value;
+            var email = document.getElementById('email').value;
+            var invoiceNumber = document.getElementById('invoiceNumber').value;
+            var description = document.getElementById('description').value;
+
+            var message = "Họ và tên: " + name + "\nSố điện thoại: " + phone + "\nLoại khách hàng: " + customerType + "\nMã thẻ: " + cardNumber + "\nE-mail: " + email + "\nMã hóa đơn: " + invoiceNumber + "\nChi tiết mô tả: " + description;
+
+            var confirmBox = confirm(message + "\n\nBạn có muốn gửi thông tin này không?");
+            if (confirmBox == true) {
+                alert("Thông tin đã được gửi. Cảm ơn bạn đã đóng góp ý kiến!");
+            }
+        }
+    </script>
+</body>
+</html>
